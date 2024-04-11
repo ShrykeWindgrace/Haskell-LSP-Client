@@ -1,0 +1,20 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.github.shrykewindgrace.hlsp</id>
+    <name>Haskell LSP Client</name>
+    <vendor>shrykewindgrace</vendor>
+
+    <depends>com.intellij.modules.ultimate</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileType name="Haskell"
+                  language="Haskell"
+                  implementationClass="com.github.shrykewindgrace.hlspc.HaskellFileType"
+                  extensions="hs"
+                  fieldName="INSTANCE"/>
+        <!-- LSP -->
+        <platform.lsp.serverSupportProvider
+                implementation="com.github.shrykewindgrace.hlspc.HaskellLspSupportProvider"/>
+    </extensions>
+
+</idea-plugin>
