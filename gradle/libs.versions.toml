@@ -3,11 +3,11 @@
 annotations = "24.0.1"
 
 # plugins
-gradleIntelliJPlugin = "1.17.3"
+gradleIntelliJPlatformPlugin = "2.0.0-beta1"
 
 [libraries]
 annotations = { group = "org.jetbrains", name = "annotations", version.ref = "annotations" }
 
 [plugins]
-gradleIntelliJPlugin = { id = "org.jetbrains.intellij", version.ref = "gradleIntelliJPlugin" }
-
+gradleIntelliJPlatformPlugin = { id = "org.jetbrains.intellij.platform", version.ref = "gradleIntelliJPlatformPlugin" }
+gradleIntelliJPlatformMigrationPlugin = { id = "org.jetbrains.intellij.platform.migration", version.ref = "gradleIntelliJPlatformPlugin" }

@@ -1,8 +1,8 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.shrykewindgrace.hlsp</id>
     <name>Haskell LSP Client</name>
-    <vendor>shrykewindgrace</vendor>
+    <vendor/>
+    <category>Custom Languages</category>
 
     <depends>com.intellij.modules.ultimate</depends>
 
